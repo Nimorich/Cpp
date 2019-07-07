@@ -1,0 +1,20 @@
+table
+{
+    text-align: center;
+    font-size: x-large;
+
+}
+caption
+{
+    padding-left: 16%;
+    font-size: 3pc;
+}
+td.vertical{
+    transform: rotate(-90deg); 
+    border: none;
+    color:red;
+}
+td.padding
+{
+    padding-left: 21%;
+}
