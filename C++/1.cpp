@@ -1,28 +1,23 @@
 #include <iostream>
 using namespace std;
-
+	
 int main()
 {
-	int year;
-	cout << "Введите год: ";
-	cin >> year;
-	
-	if (year % 4 == 0)
+	typedef int inta;
+	inta rows;
+	cout << "Введите количество строк: ";
+	cin >> rows;
+	for(int i=1; i<=rows; ++i)
 	{
-		if (year % 100 == 0)
+		for(int j=1; j<=i; ++j)
 		{
-			if (year % 400 == 0)
-				cout << year << " - год високостный";
-			else
-				cout << year << " - год невисокостный";
+			cout << "* ";
 		}
-		else
-			cout << year << " - год високостный";
+		cout << "\n";
 	}
-	else
-		cout << year << " - год невисокостный";
+	
 	cout << endl;
-
 	system("pause");
 	return 0;
 }
+
